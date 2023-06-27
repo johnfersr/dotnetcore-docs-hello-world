@@ -21,7 +21,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
+    azureSubscription: 'Yel VS Enterprise Subscription'
     appType: 'webAppLinux'
-    appName: '<Name of web app>'
+    appName: 'Test Web App'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
